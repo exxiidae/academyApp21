@@ -64,7 +64,7 @@ namespace AcademyApp
         // ===== Строка подключения =====
         static string ConnectDB()
         {
-            // ⚠️ ПРОВЕРЬ имя БД: у тебя база в SSMS называется "academy"
+            
             return "Data Source=COMP7A2\\SQLEXPRESS;" +
                    "Initial Catalog=academy;" +
                    "Integrated Security=True;" +

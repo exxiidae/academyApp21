@@ -33,7 +33,7 @@ namespace DBConnect.Data
             );
         }
 
-        // УРОК 10: QuerySingle<int> — возвращает новый ID
+        
         public int CreateStudent(Student student)
         {
             using var connection = new SqlConnection(_connectionString);

@@ -13,7 +13,7 @@ namespace DBConnect.Data
             _connectionString = connectionString;
         }
 
-        // УРОК 9: Query<T>
+       
         public List<Group> GetAll()
         {
             using var connection = new SqlConnection(_connectionString);
@@ -22,7 +22,7 @@ namespace DBConnect.Data
             ).ToList();
         }
 
-        // УРОК 9: QueryFirstOrDefault<T>
+        
         public Group? GetById(int id)
         {
             using var connection = new SqlConnection(_connectionString);
@@ -32,7 +32,7 @@ namespace DBConnect.Data
             );
         }
 
-        // QuerySingle<int> — возвращает новый ID
+       
         public int CreateGroup(Group group)
         {
             using var connection = new SqlConnection(_connectionString);
