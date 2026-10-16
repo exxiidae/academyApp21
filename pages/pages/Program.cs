@@ -19,7 +19,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// ====== МАРШРУТЫ API ======
+
 app.MapGet("/students/all", (StudentRepository student_repo) =>
 {
     var students = student_repo.GetAll();
@@ -33,14 +33,21 @@ app.MapGet("/groups/all", (GroupRepository group_repo) =>
 });
 
 
+app.MapGet("/students/{id:int}", (int id, StudentRepository student_repo) =>
+{
+    var student = student_repo.GetById(id);
+    return student is null
+        ? Results.NotFound(new { message = $"Студент с ID={id} не найден" })
+        : Results.Ok(student);
+});
+
+
 app.UseHttpsRedirection();
 app.UseDefaultFiles();     
 app.UseStaticFiles();      
 
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapRazorPages();
 
 app.Run();
