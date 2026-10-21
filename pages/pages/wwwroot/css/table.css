@@ -70,3 +70,8 @@ tr:hover {
     line-height: 1.6;
     color: #2c3e50;
 }
+
+
+button {
+    margin-right: 5px;
+}

@@ -17,24 +17,27 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// READ (All)
 app.MapGet("/students/all", (StudentRepository student_repo) =>
 {
     return Results.Ok(student_repo.GetAll());
 });
 
+// READ (By ID)
 app.MapGet("/students/{id:int}", (int id, StudentRepository student_repo) =>
 {
     var student = student_repo.GetById(id);
     return student is null
-        ? Results.NotFound(new { message = $"������� � ID={id} �� ������" })
+        ? Results.NotFound(new { message = $"Студент с ID={id} не найден" })
         : Results.Ok(student);
 });
 
+// CREATE
 app.MapPost("/students/add", (Student student, StudentRepository student_repo) =>
 {
     if (string.IsNullOrWhiteSpace(student.FirstName) || string.IsNullOrWhiteSpace(student.LastName))
     {
-        return Results.BadRequest(new { message = "��� � ������� �����������" });
+        return Results.BadRequest(new { message = "Имя и фамилия обязательны" });
     }
 
     int newId = student_repo.CreateStudent(student);
@@ -42,6 +45,28 @@ app.MapPost("/students/add", (Student student, StudentRepository student_repo) =
     return Results.Ok(student);
 });
 
+
+app.MapPut("/students/{id:int}", (int id, Student student, StudentRepository student_repo) =>
+{
+    var existing = student_repo.GetById(id);
+    if (existing is null) return Results.NotFound(new { message = "Студент не найден" });
+
+    student.StudentId = id;
+    student_repo.Update(student);
+    return Results.Ok(student);
+});
+
+
+app.MapDelete("/students/{id:int}", (int id, StudentRepository student_repo) =>
+{
+    var existing = student_repo.GetById(id);
+    if (existing is null) return Results.NotFound(new { message = "Студент не найден" });
+
+    student_repo.Delete(id);
+    return Results.Ok(new { message = "Студент удален" });
+});
+
+// Groups (Read)
 app.MapGet("/groups/all", (GroupRepository group_repo) =>
 {
     return Results.Ok(group_repo.GetAll());

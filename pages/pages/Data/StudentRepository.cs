@@ -13,7 +13,6 @@ namespace DBConnect.Data
             _connectionString = connectionString;
         }
 
-        // УРОК 9: Query<T>
         public List<Student> GetAll()
         {
             using var connection = new SqlConnection(_connectionString);
@@ -22,7 +21,6 @@ namespace DBConnect.Data
             ).ToList();
         }
 
-        // УРОК 9: QueryFirstOrDefault<T>
         public Student? GetById(int id)
         {
             using var connection = new SqlConnection(_connectionString);
@@ -32,7 +30,6 @@ namespace DBConnect.Data
                 new { Id = id }
             );
         }
-
 
         public int CreateStudent(Student student)
         {
@@ -64,4 +61,4 @@ namespace DBConnect.Data
             connection.Execute("DELETE FROM Students WHERE StudentId = @Id", new { Id = id });
         }
     }
-} 
+}
