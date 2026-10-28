@@ -1,13 +1,13 @@
-using DBConnect.Data;
 using DBConnect.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 
 var conn_str = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddSingleton(new StudentRepository(conn_str));
-builder.Services.AddSingleton(new GroupRepository(conn_str));
+builder.Services.AddDbContext<CollegeDBContext>(options =>
+    options.UseSqlServer(conn_str));
 
 var app = builder.Build();
 
@@ -17,59 +17,69 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// READ (All)
-app.MapGet("/students/all", (StudentRepository student_repo) =>
+app.MapGet("/students/all", (CollegeDBContext db) =>
 {
-    return Results.Ok(student_repo.GetAll());
+    return Results.Ok(db.Students.ToList());
 });
 
-// READ (By ID)
-app.MapGet("/students/{id:int}", (int id, StudentRepository student_repo) =>
+app.MapGet("/students/{id:int}", (int id, CollegeDBContext db) =>
 {
-    var student = student_repo.GetById(id);
+    var student = db.Students.Find(id);
     return student is null
         ? Results.NotFound(new { message = $"Студент с ID={id} не найден" })
         : Results.Ok(student);
 });
 
-// CREATE
-app.MapPost("/students/add", (Student student, StudentRepository student_repo) =>
+app.MapPost("/students/add", (Student student, CollegeDBContext db) =>
 {
     if (string.IsNullOrWhiteSpace(student.FirstName) || string.IsNullOrWhiteSpace(student.LastName))
     {
         return Results.BadRequest(new { message = "Имя и фамилия обязательны" });
     }
 
-    int newId = student_repo.CreateStudent(student);
-    student.StudentId = newId;
+    db.Students.Add(student);
+    db.SaveChanges();
     return Results.Ok(student);
 });
 
-
-app.MapPut("/students/{id:int}", (int id, Student student, StudentRepository student_repo) =>
+app.MapPut("/students/{id:int}", (int id, Student student, CollegeDBContext db) =>
 {
-    var existing = student_repo.GetById(id);
+    var existing = db.Students.Find(id);
     if (existing is null) return Results.NotFound(new { message = "Студент не найден" });
 
-    student.StudentId = id;
-    student_repo.Update(student);
-    return Results.Ok(student);
+    existing.FirstName = student.FirstName;
+    existing.LastName = student.LastName;
+    existing.Age = student.Age;
+    existing.GroupId = student.GroupId;
+
+    db.SaveChanges();
+    return Results.Ok(existing);
 });
 
-
-app.MapDelete("/students/{id:int}", (int id, StudentRepository student_repo) =>
+app.MapDelete("/students/{id:int}", (int id, CollegeDBContext db) =>
 {
-    var existing = student_repo.GetById(id);
-    if (existing is null) return Results.NotFound(new { message = "Студент не найден" });
+    var student = db.Students.Find(id);
+    if (student is null) return Results.NotFound(new { message = "Студент не найден" });
 
-    student_repo.Delete(id);
+    db.Students.Remove(student);
+    db.SaveChanges();
     return Results.Ok(new { message = "Студент удален" });
 });
 
-// Groups (Read)
-app.MapGet("/groups/all", (GroupRepository group_repo) =>
+app.MapGet("/groups/all", (CollegeDBContext db) =>
 {
-    return Results.Ok(group_repo.GetAll());
+    return Results.Ok(db.Groups.ToList());
+});
+
+app.MapPost("/groups/add", (Group group, CollegeDBContext db) =>
+{
+    if (string.IsNullOrWhiteSpace(group.GroupName))
+    {
+        return Results.BadRequest(new { message = "Название группы обязательно" });
+    }
+    db.Groups.Add(group);
+    db.SaveChanges();
+    return Results.Ok(group);
 });
 
 app.UseHttpsRedirection();
