@@ -17,18 +17,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.MapGet("/students/all", (CollegeDBContext db) =>
-{
-    return Results.Ok(db.Students.ToList());
-});
-
-app.MapGet("/students/{id:int}", (int id, CollegeDBContext db) =>
-{
-    var student = db.Students.Find(id);
-    return student is null
-        ? Results.NotFound(new { message = $"Студент с ID={id} не найден" })
-        : Results.Ok(student);
-});
+app.MapGet("/students/all", (CollegeDBContext db) => Results.Ok(db.Students.ToList()));
 
 app.MapPost("/students/add", (Student student, CollegeDBContext db) =>
 {
@@ -36,56 +25,29 @@ app.MapPost("/students/add", (Student student, CollegeDBContext db) =>
     {
         return Results.BadRequest(new { message = "Имя и фамилия обязательны" });
     }
-
     db.Students.Add(student);
     db.SaveChanges();
     return Results.Ok(student);
 });
 
-app.MapPut("/students/{id:int}", (int id, Student student, CollegeDBContext db) =>
+app.MapGet("/teachers/all", (CollegeDBContext db) => Results.Ok(db.Teachers.ToList()));
+
+app.MapPost("/teachers/add", (Teacher teacher, CollegeDBContext db) =>
 {
-    var existing = db.Students.Find(id);
-    if (existing is null) return Results.NotFound(new { message = "Студент не найден" });
-
-    existing.FirstName = student.FirstName;
-    existing.LastName = student.LastName;
-    existing.Age = student.Age;
-    existing.GroupId = student.GroupId;
-
-    db.SaveChanges();
-    return Results.Ok(existing);
-});
-
-app.MapDelete("/students/{id:int}", (int id, CollegeDBContext db) =>
-{
-    var student = db.Students.Find(id);
-    if (student is null) return Results.NotFound(new { message = "Студент не найден" });
-
-    db.Students.Remove(student);
-    db.SaveChanges();
-    return Results.Ok(new { message = "Студент удален" });
-});
-
-app.MapGet("/groups/all", (CollegeDBContext db) =>
-{
-    return Results.Ok(db.Groups.ToList());
-});
-
-app.MapPost("/groups/add", (Group group, CollegeDBContext db) =>
-{
-    if (string.IsNullOrWhiteSpace(group.GroupName))
+    if (string.IsNullOrWhiteSpace(teacher.FirstName) || string.IsNullOrWhiteSpace(teacher.LastName))
     {
-        return Results.BadRequest(new { message = "Название группы обязательно" });
+        return Results.BadRequest(new { message = "Имя и фамилия обязательны" });
     }
-    db.Groups.Add(group);
+    db.Teachers.Add(teacher);
     db.SaveChanges();
-    return Results.Ok(group);
+    return Results.Ok(teacher);
 });
+
+app.MapGet("/groups/all", (CollegeDBContext db) => Results.Ok(db.Groups.ToList()));
 
 app.UseHttpsRedirection();
 app.UseDefaultFiles();
 app.UseStaticFiles();
-
 app.UseRouting();
 app.UseAuthorization();
 app.MapRazorPages();

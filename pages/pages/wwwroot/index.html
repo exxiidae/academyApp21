@@ -4,64 +4,55 @@
     <meta charset="utf-8" />
     <title>TOP Academy</title>
     <link rel="stylesheet" href="css/table.css" />
+    <style>
+        select { padding: 8px; font-size: 16px; margin-bottom: 10px; margin-right: 10px; border-radius: 4px; border: 1px solid #ccc; }
+    </style>
 </head>
 <body>
     <h1>Список студентов</h1>
-    <p id="error"></p>
     <table>
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Имя</th>
-                <th>Фамилия</th>
-                <th>Возраст</th>
-                <th>GroupId</th>
-                <th>Действия</th> 
-            </tr>
+            <tr><th>ID</th><th>Имя</th><th>Фамилия</th><th>Возраст</th><th>GroupId</th></tr>
         </thead>
         <tbody id="studentsBody"></tbody>
     </table>
 
-    <h1>Добавить студента</h1>
+    <h1>Список учителей</h1>
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Имя</th><th>Фамилия</th></tr>
+        </thead>
+        <tbody id="teachersBody"></tbody>
+    </table>
+
+    <h1>Добавить запись</h1>
     <div class="block">
+        <label for="addType">Кого создать:</label>
+        <select id="addType" onchange="toggleAddFields()">
+            <option value="student">Студента</option>
+            <option value="teacher">Учителя</option>
+        </select>
+        <br>
+        
         <input type="text" id="addFirstName" placeholder="Имя" />
         <input type="text" id="addLastName" placeholder="Фамилия" />
-        <input type="number" id="addAge" placeholder="Возраст" />
-        <input type="number" id="addGroupId" placeholder="GroupId" />
-        <button onclick="addStudent()">Добавить</button>
+        
+        <div id="studentFields">
+            <input type="number" id="addAge" placeholder="Возраст" />
+            <input type="number" id="addGroupId" placeholder="GroupId" />
+        </div>
+        
+        <button onclick="addEntity()">Добавить</button>
         <p id="addResult"></p>
     </div>
 
     <h1>Список групп</h1>
     <table>
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Название группы</th>
-            </tr>
+            <tr><th>ID</th><th>Название группы</th></tr>
         </thead>
         <tbody id="groupsBody"></tbody>
     </table>
-
-    <h1>Найти студента по ID</h1>
-    <div class="block">
-        <input type="number" id="searchId" placeholder="Введите ID" />
-        <button onclick="loadStudentById()">🔍 Найти</button>
-        <p id="studentResult"></p>
-    </div>
-
-    
-    <div id="editForm" class="block" style="display:none; border: 2px solid #e67e22;">
-        <h2>Редактировать студента <span id="editIdLabel"></span></h2>
-        <input type="hidden" id="editId" />
-        <input type="text" id="editFirstName" placeholder="Имя" />
-        <input type="text" id="editLastName" placeholder="Фамилия" />
-        <input type="number" id="editAge" placeholder="Возраст" />
-        <input type="number" id="editGroupId" placeholder="GroupId" />
-        <button onclick="updateStudent()" style="background:#e67e22;">Сохранить</button>
-        <button onclick="cancelEdit()" style="background:#7f8c8d;">Отмена</button>
-        <p id="editResult"></p>
-    </div>
 
     <script src="js/routes.js"></script>
 </body>
