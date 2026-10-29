@@ -1,50 +1,52 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Komp7\\source\\repos\\pages\\",
+  "WorkspaceRootPath": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\wwwroot\\js\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\wwwroot\\js\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\wwwroot\\css\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\wwwroot\\css\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\wwwroot\\css\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\wwwroot\\js\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\wwwroot\\js\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\data\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\data\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\gitfiles\\academyapp21\\pages\\pages\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|c:\\users\\komp7\\source\\repos\\pages\\pages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8A4BFC42-0B7C-4E40-935C-9114336E80BF}|pages\\pages.csproj|solutionrelative:pages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Data\\StudentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Data\\GroupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,17 +56,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "pages\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\appsettings.Development.json",
+              "RelativeToolTip": "pages\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-29T07:29:23.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "pages\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Properties\\launchSettings.json",
+              "RelativeToolTip": "pages\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-29T07:29:14.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "routes.js",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\js\\routes.js",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\wwwroot\\js\\routes.js",
               "RelativeDocumentMoniker": "pages\\wwwroot\\js\\routes.js",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\js\\routes.js",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\wwwroot\\js\\routes.js",
               "RelativeToolTip": "pages\\wwwroot\\js\\routes.js",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAYwGQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-10-19T07:42:23.454Z",
               "EditorCaption": ""
@@ -72,23 +100,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "pages\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "pages\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-19T07:40:29.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "table.css",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\css\\table.css",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\wwwroot\\css\\table.css",
               "RelativeDocumentMoniker": "pages\\wwwroot\\css\\table.css",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\css\\table.css",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\wwwroot\\css\\table.css",
               "RelativeToolTip": "pages\\wwwroot\\css\\table.css",
               "ViewState": "AgIAADIAAAAAAAAAAAAwwEMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -97,13 +112,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\index.html",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "pages\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\wwwroot\\index.html",
               "RelativeToolTip": "pages\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-10-16T07:51:22.605Z",
               "EditorCaption": ""
@@ -112,9 +127,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Pages\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Pages\\Privacy.cshtml",
               "RelativeDocumentMoniker": "pages\\Pages\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Pages\\Privacy.cshtml",
               "RelativeToolTip": "pages\\Pages\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -124,9 +139,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Pages\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "pages\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Pages\\Index.cshtml",
               "RelativeToolTip": "pages\\Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -136,9 +151,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Group.cs",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Models\\Group.cs",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Models\\Group.cs",
               "RelativeDocumentMoniker": "pages\\Models\\Group.cs",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Models\\Group.cs",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Models\\Group.cs",
               "RelativeToolTip": "pages\\Models\\Group.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -146,52 +161,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Data\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "pages\\Data\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\pages\\pages\\Data\\StudentRepository.cs",
               "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Data\\StudentRepository.cs",
-              "RelativeToolTip": "pages\\Data\\StudentRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\pages\\pages\\Data\\StudentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T07:16:42.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "GroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Data\\GroupRepository.cs",
-              "RelativeDocumentMoniker": "pages\\Data\\GroupRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\pages\\pages\\Data\\GroupRepository.cs",
               "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Data\\GroupRepository.cs",
-              "RelativeToolTip": "pages\\Data\\GroupRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\pages\\pages\\Data\\GroupRepository.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T07:16:40.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Program.cs",
               "RelativeDocumentMoniker": "pages\\Program.cs",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\Program.cs",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\Program.cs",
               "RelativeToolTip": "pages\\Program.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAYwDEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T07:05:55.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T07:05:55.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\appsettings.json",
               "RelativeDocumentMoniker": "pages\\appsettings.json",
-              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\pages\\pages\\appsettings.json",
+              "ToolTip": "C:\\Users\\Komp7\\source\\repos\\gitFiles\\academyApp21\\pages\\pages\\appsettings.json",
               "RelativeToolTip": "pages\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-16T07:05:52.345Z"
+              "WhenOpened": "2026-10-16T07:05:52.345Z",
+              "EditorCaption": ""
             }
           ]
         }

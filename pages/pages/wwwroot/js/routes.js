@@ -108,7 +108,7 @@ async function addStudent() {
     }
 }
 
-// --- НОВОЕ ДЛЯ 18 УРОКА ---
+
 
 async function deleteStudent(id) {
     if (!confirm(`Вы уверены, что хотите удалить студента с ID ${id}?`)) return;
